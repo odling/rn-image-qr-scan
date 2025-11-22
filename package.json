@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odling/odling-rn-image-qr-scan.git"
+    "url": "git+https://github.com/odling/rn-image-qr-scan.git"
   },
   "author": "odling <o.uludag1@gmail.com> (https://github.com/odling)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/odling/odling-rn-image-qr-scan/issues"
+    "url": "https://github.com/odling/rn-image-qr-scan/issues"
   },
-  "homepage": "https://github.com/odling/odling-rn-image-qr-scan#readme",
+  "homepage": "https://github.com/odling/rn-image-qr-scan#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
