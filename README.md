@@ -1,32 +1,42 @@
 # @odling/rn-image-qr-scan
 
-description
+A React Native module that allows you to scan QR codes directly from an image file path.
 
 ## Installation
-
 
 ```sh
 npm install @odling/rn-image-qr-scan
 ```
 
+or
+
+```sh
+yarn add @odling/rn-image-qr-scan
+```
 
 ## Usage
 
-
 ```js
-import { multiply } from '@odling/rn-image-qr-scan';
+import { scanFromPath } from '@odling/rn-image-qr-scan';
 
 // ...
 
-const result = multiply(3, 7);
+try {
+  // Pass the local file path of the image
+  const result = await scanFromPath('file:///path/to/image.jpg');
+  console.log('QR Code data:', result); // Returns an array of strings found in the QR code(s)
+} catch (error) {
+  console.error('Failed to scan QR code:', error);
+}
 ```
 
+## Credits
+
+This module was inspired by and references the article **"Implement QR Code Scanning from an Image in React Native"** by [Max Wang](https://medium.com/@maxslashwang).
 
 ## Contributing
 
-- [Development workflow](CONTRIBUTING.md#development-workflow)
-- [Sending a pull request](CONTRIBUTING.md#sending-a-pull-request)
-- [Code of conduct](CODE_OF_CONDUCT.md)
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
