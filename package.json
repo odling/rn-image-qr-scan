@@ -37,7 +37,7 @@
     "prepare": "bob build",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "release": "release-it --only-version",
+    "release": "release-it",
     "test": "jest"
   },
   "keywords": [
@@ -56,7 +56,8 @@
   },
   "homepage": "https://github.com/odling/rn-image-qr-scan#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.8.1",
